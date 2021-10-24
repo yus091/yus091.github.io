@@ -1,0 +1,109 @@
+body{
+	background-image: url("road.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+#tit{
+	color: #919191;
+	font-family: Lobster;
+	margin: 0px;
+}
+#titw{
+	font-family: Lobster;
+	background-color: #919191;
+	margin: 50px 50px;
+	text-align: center;
+}
+ul{
+	margin: 20px 50px;
+	padding: 0;
+	display: flex;
+}
+ul li{
+	list-style: none;
+	padding: 10px 20px;
+}
+ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #363636;
+	position: relative;
+}
+ul li a:before{
+	content: '';
+	width: 0px;
+	height: 5px;
+	background: #363636;
+	position: absolute;
+	top: 100%
+	left: 0;
+	transition: .5s;
+}
+ul li:hover a:before{
+	width: 50%;
+	transform: translateX(100%);
+}
+#divs{
+	margin: 0px auto;
+	text-align: center;
+	background-color: rgb(256, 256, 256, 20%);
+}
+#lists{
+	background-color: white;
+	opacity: .5;
+}
+#dig1{
+	width: 30vw;
+	padding: 20px;
+}
+#dig2{
+	width: 30vw;
+	padding: 20px;
+}
+#dig3{
+	width: 30vw;
+	padding: 20px;
+}
+#dig4{
+	width: 30vw;
+	padding: 20px;
+}
+#dig5{
+	width: 30vw;
+	padding: 20px;
+}
+#dig6{
+	width: 30vw;
+	padding: 20px;
+}
+#dig7{
+	width: 30vw;
+	padding: 20px;
+}
+#dig8{
+	width: 30vw;
+	padding: 20px;
+}
+#div1{
+	width: 40vw;
+	padding: 10px;
+	border: 2px;
+	margin-right: 10px;
+	float: left;
+	border-width: 5px;
+	border-style: dashed;
+	border-color: #363636;
+}
+#div2{
+	width: 40vw;
+	padding: 10px;
+	border: 2px;
+	margin-right: 10px;
+	float: left;
+	border-width: 15px;
+	border-style: dashed;
+	border-color: #363636;
+}
