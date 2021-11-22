@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>yus's page</title>
-	<link rel="stylesheet" type="text/css" href="backgrooud.css">
+	<title>Letter_pOem_fairytalE</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	<!-- above is the bootstrap's url!!!!!! -->
+	<!-- "container-fluid, text-primary"and so on, NO JQUERY!!!!! -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="background2.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1 id='tit'>Everything's got a moral, if only you can find it.
-	</h1>
-	<div id='lists'>
-		<ul>
-			<li><a href="index.html">home</li>
-			<li><a href="note.html">note</li>	
-			<li><a href="contact.html">contact</li>
-		</ul>
+	<div class="container-fluid">
+		<h1 class="text-primary text-center" id="titleCen">Everything's got a moral, if only you can find it.</h1>
 	</div>
-	<h1 id="titw">Nothing hide in here.</h1>
-	
+
+	<script>
+		$(document).ready(function(){
+			$("h1").animate({ "opacity" : "100%"}, 1000);
+			$("#lists").delay(1000).animate({ "opacity" : "100%"}, 1000);
+		});
+		
+	</script>
+	<div class="row" id="lists">
+		<ul>
+			<div class="col-xs-4">
+				<li id="listA"><a href="index.html">home</li>
+		    </div>
+		    <div class="col-xs-4">
+		      	<li id="listB"><a href="note.html">note</li>
+		    </div>
+		    <div class="col-xs-4">
+				<li id="listC"><a href="contact.html">contact</li>
+	    </div>		
+		</ul>
+  </div>
+
 </body>
 </html>
