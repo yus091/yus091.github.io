@@ -1,0 +1,48 @@
+body{
+	background-image: url("sea.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#titleCen{
+	font-family: Lobster;
+	margin: 0 auto;
+	opacity: 0%;
+}
+
+#lists{
+	opacity: 0%;
+}
+
+ul{
+	margin: 20px 50px;
+	padding: 0;
+	display: flex;
+}
+ul li{
+	list-style: none;
+	padding: 10px 20px;
+}
+ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #2f4f4f;
+	position: relative;
+}
+ul li a:before{
+	content: '';
+	width: 0px;
+	height: 5px;
+	background: #2f4f4f;
+	position: absolute;
+	top: 100%
+	left: 0;
+	transition: .5s;
+}
+ul li:hover a:before{
+	width: 50%;
+	transform: translateX(100%);
+}
